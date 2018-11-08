@@ -1,0 +1,8 @@
+<!--pages/drawPrize/drawPrize.wxml-->
+<view>
+  <view class='btn-area'>
+    <!-- <button class='iconfont icon-choujiang' bindtap='draw' wx:if="{{isManager}}"></button> -->
+    <!-- <button class='iconfont icon-zhongjiangjilu' bindtap='winner'></button> -->
+    <button bindtap='prePrize' class='iconfont icon-jiangpin1'></button> 
+  </view>
+</view>

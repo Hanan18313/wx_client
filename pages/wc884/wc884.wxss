@@ -1,0 +1,8 @@
+/* pages/wc884/wc884.wxss */
+
+page{
+    background-color: #FFFFFF;
+}
+image{
+    margin: 4px 0;
+}

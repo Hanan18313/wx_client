@@ -1,0 +1,69 @@
+<view class='page'>
+  <view class='page__bd'>
+    <view class='weui_navbar'>
+      <view class='top_bar'>
+        <view class='signIn_id'><text>编号</text></view>
+        <view class='name'><text>名字</text></view>
+        <view class='prize_name'><text>奖品</text></view>
+        <view class='round'><text>轮数</text></view>
+      </view>
+    </view>
+    <!--最外层大盒子 -->
+      <view class="collect_big_box">
+      <!--列表盒子 -->
+        <view class="collect_list_box">
+          <!-- <scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 840rpx;"> -->
+          <scroll-view scroll-y="true" style='height:85vh'>
+          <!--中部搜索结果列表盒子-->
+            <view class="recordList_box">
+            <!--外层大盒子 -->
+              <view class="content_box" wx:for="{{dataArr}}" wx:key="{{key}}">
+                <view class='section'>
+                  <view class='section_member'>
+                    <view class='section_Con'>
+                      <!-- <text space='emsp'>编  号：</text> -->
+                      <view wx:for="{{item}}">
+                        <view class='section_title'>
+                          <view>{{item[0].signIn_id}}</view>
+                        </view>
+                      </view>
+                    </view>
+                    <view class='section_Con'>
+                    <!-- <text space='emsp'>姓  名：</text> -->
+                      <view wx:for="{{item}}">
+                        <view class='section_title'>
+                          <view>{{item[0].name}}</view>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                  <view class='section_prize'>
+                    <view class='section_Con'>
+                    <!-- <text class='emsp'>奖品名称：</text> -->
+                      <view wx:for="{{item}}">
+                        <view class='section_title'>
+                          <view>{{item[0].prize_name}}</view>
+                        </view>
+                      </view>
+                    </view>
+                    <view class='section_Con'>
+                    <!-- <text class='emsp'>所在轮数：</text> -->
+                      <view wx:for="{{item}}">
+                        <view class='section_title'>
+                          <view wx:if="{{item[0].round == 1}}">第一轮</view>
+                          <view wx:if="{{item[0].round == 2}}">第二轮</view>
+                          <view wx:if="{{item[0].round == 3}}">第三轮</view>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+  </view>
+</view>
+
+

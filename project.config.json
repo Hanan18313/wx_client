@@ -1,0 +1,76 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.2.0",
+	"appid": "wx238ca91cc7a15764",
+	"projectname": "mvc",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "delete",
+					"pathName": "pages/prizeEdit/prizeEdit",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "center",
+					"pathName": "pages/Center/Center",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "抽奖",
+					"pathName": "pages/drawPrizes/drawPrizes",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "checked",
+					"pathName": "pages/checked/checked",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "其他产品",
+					"pathName": "pages/another/another",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wc884",
+					"pathName": "pages/wc884/wc884"
+				}
+			]
+		}
+	}
+}

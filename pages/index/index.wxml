@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view>
+    <button bindtap='prizeManage' wx:if = "{{isManager}}">奖品管理</button>
+    <button i-button type="ghost"  bindtap='signIn'>点此进行签到</button>
+    <!-- <button bindtap='product' wx:if="{{isManager}}">产品管理</button> -->
+    <!-- <button bindtap='draw' wx:if = "{{isManager}}">抽奖</button> -->
+    <i-toast id="toast" />
+  </view>
+  <view class="userSignIn">
+    <!-- <text class="user-motto">{{motto}}</text> -->
+    <text wx:if = "{{isSignIn}}">您的签到号码为：{{signIn_info.signIn_id}}</text>
+  </view>
+</view>

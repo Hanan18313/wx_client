@@ -1,0 +1,5 @@
+<!--pages/prizeManage/prizeManage.wxml-->
+<view>
+  <button bindtap='prizeShow'>奖品管理</button>
+  <button bindtap='prizeView'>预览</button>
+</view>

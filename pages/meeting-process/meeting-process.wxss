@@ -1,0 +1,20 @@
+/* pages/meeting-process/meeting-process.wxss */
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.meeting_title{
+  padding-top: 15px;
+  text-align: center;
+}
+.meeting_section{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+
+}

@@ -1,0 +1,92 @@
+<!--pages/Center/Center.wxml-->
+<view class='page'>
+  <view class='page__bd'>
+     <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+      <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+      <i-notice-bar icon="systemprompt" loop >
+        欢迎参加杭州朗杰测控技术开发有限公司产品展览会！
+      </i-notice-bar>
+        <view hidden='{{activeIndex != 0}}'>
+              <!--最外层大盒子 -->
+          <view class="collect_big_box">
+
+          <!--列表盒子 -->
+            <view class="collect_list_box">
+              <!-- <scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 840rpx;"> -->
+              <scroll-view scroll-y="true" style='height:80vh'>
+              <view class='signIn_id'>
+                <view wx:if="{{signIn_info != null}}" style='font-size:40px;color:#455ede'>抽奖号：{{signIn_info}}</view>
+                <view wx:elif="{{signIn_info == null}}">会员请领取签到编号!</view>
+              </view>
+              <view class='section' >
+              <view class="caption-wrap">
+               <!-- <button class='iconfont icon-huiyi'><text class='text'>会议安排</text></button> -->
+               <i-panel>
+                      <i-cell-group class="cell_group">
+                        <i-cell title="会议流程" is-link url="/pages/meeting-process/meeting-process" value=""></i-cell>
+                        <i-cell title="威程884外置控制器" is-link url="/pages/wc884/wc884"></i-cell>
+                        <i-cell title="抗折抗压一体机控制器" is-link url="/pages/flexural/flexural"></i-cell>
+                        <i-cell title="潮科技--朗杰测控微服务2.0" is-link url="/pages/MaxTest/MaxTest"></i-cell>
+                        <i-cell title="2018--朗杰技术荟萃" is-link url="/pages/tech/tech" ></i-cell>
+                        <i-cell title="与会人员" is-link url="../attendee/attendee"></i-cell>
+                        <i-cell bindtap='drawPrize' title="抽奖" is-link></i-cell>
+                        <i-cell title="是否午宴">
+                          <i-switch value="{{currentLunch}}" size="large" bind:change="onChange" slot="footer">
+                              <view slot="open">是</view>
+                              <view slot="close">否</view>
+                          </i-switch>
+                        </i-cell>
+                      </i-cell-group>
+               </i-panel>
+               
+              </view>
+            </view>
+              </scroll-view>
+            </view>
+          </view>
+        </view>
+        <view hidden='{{activeIndex != 1}}'>
+<view class='page'>
+  <view class='page__bd'>
+    <!--最外层大盒子 -->
+      <view class="collect_big_box">
+      <!--列表盒子 -->
+        <view class="collect_list_box">
+          <!-- <scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 840rpx;"> -->
+          <scroll-view scroll-y="true" style='height:80vh'>
+            <view style='padding:0 40rpx 20rpx 40rpx'><image style='width:100%;' src='../../images/family.png'></image></view>
+            <view class='section_content'>
+              <text space='emsp'><text style='font-weight:bolder;font-size:18px;margin-left:32px'>杭州朗杰测控技术开发有限公司</text>是一家专注于质量控制和工业现场自动化领域，提供精密测控产品和专业增值服务的高新技术企业。成立十余年来先后获得国家30余项自主知识产权，于2010年获评浙江省高新技术企业。目前一万多套测控产品在世界各地稳定运行，为数以千计的客户成功实施专业测试解决方案。
+  朗杰公司针对试验机行业的需求开发了UTK开放式技术平台，研制生产UTK套件系列虚拟仪器系统、MaxTC™系列网络型万能试验机测控仪、MaxTest®系列试验机控制软件、DynaImpact™仪器化冲击试验机控制系统。齐全的产品线和良好的工程业绩赢得了试验机厂家的信任，朗杰公司与国内大部分知名试验机厂家建立了多种层次的长期合作关系，成为试验机行业中配套品种最多、市场占有率领先的独立控制器供应商。
+  为了拓展测控应用领域，满足更为严格的现场测试需求，朗杰公司正在开发基于智能设备互联的ISD技术平台，推出代龙™和飞利™两个全新品牌产品。代龙™系统凭借高速率闭环控制、高分辨率采集精度和DynaLive智能数字接口,努力打造成为具有国际竞争力的动态测控品牌。朗杰公司的新产品将更多关注用户体验和时尚设计，中高端产品提供包括基于WinCE、Android和自主知识产权的SP2触控技术的多种彩屏界面。价格竞争型的数码管显示产品，采用专利的易用面板设计，透过朗杰专有的RSA技术获得类云计算功能。
+  朗杰公司在行业首创智动力™品牌的商业化服务，利用我们的综合技术优势，包括多专业研发和工程团队、UTK和ISD测控平台技术、InterMax®组网技术，为客户提供方案咨询及设计、定制及开发、现场安装调试、委托测试、培训与认证等全方位增值服务。朗杰公司的中长期目标是转型为高技术服务型企业。</text>
+            </view>
+            <view style='float:right;padding:0 40rpx 0 0;color:blue' bindtap='makePhoneCall'>服务电话:0571-69958000</view>
+          </scroll-view>
+        </view>
+      </view>
+  </view>
+</view>
+        </view>
+      </view>
+    </view>
+    <view style='position:relative;bottom:104rpx'>
+      <!-- <i-tab-bar current="{{currentBar}}" color="#f759ab" bindchange = "handleBarChange">
+        <i-tab-bar-item key = "homepage" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+        <i-tab-bar-item key = "mine" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+      </i-tab-bar> -->
+    </view>
+  </view>
+</view>
+
+
+
+

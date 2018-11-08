@@ -1,0 +1,54 @@
+
+<view class='page'>
+  <view class='page__bd'>
+    <view class="weui-search-bar">
+    <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" confirm-type='search' bindconfirm='search' class="weui-search-bar__input" placeholder="请输入姓名或公司名" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+            <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+            </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+            <icon class="weui-icon-search" type="search" size="14"></icon>
+            <view class="weui-search-bar__text">搜索</view>
+        </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+</view>
+      <view class="collect_big_box">
+        <view class="collect_list_box">
+          <scroll-view scroll-y="true" style='height:85vh'bindscrolltolower='lower'>
+            <view class="recordList_box">
+              <view class="content_box" wx:for="{{items}}" wx:key="{{key}}">
+              <view class="view_ce">
+                <view style="{{item.txtStyle}}" class="content_box_center" data-index="{{index}}">
+                  <view class="ProductIco_box" bindtap='previewImage' id='{{item.id}}'>
+                    <image class="ProductIco" wx:if = "{{item.portrait}}" src="{{item.portrait}}" data-src="{{item.portrait}}"></image>
+                  </view>
+                   <view class="view_content">
+                   <view style='display:flex;flex-direction:row;'>
+                      <view style='width:130px;'><text>姓名：{{item.name}}</text></view>
+                      <view><text style='text-align:center;' wx:if = "{{item.signIn_id == null}}">未领取签到编号</text>
+                      <text wx:elif="{{item.signIn_id != null}}">{{item.signIn_id}}号</text></view>
+                   </view>
+                      <view class='view_title'>
+                        <view class='view_title_child2'><text>公司：{{item.company}}</text></view>
+                      </view>
+                    </view>
+                    <view class='details'  bindtap='details' data-index = "{{index}}" data-prize_id = "{{item.id}}" data-id='id'>
+                      <text class='iconfont icon-angle-double-right'></text>
+                    </view>
+                    </view>
+                </view>
+            </view>
+          </view>
+          <i-load-more wx:if="{{status}}" tip="{{tipText}}" loading="{{load}}"/>
+          </scroll-view>
+        </view>
+      </view>
+  </view>
+</view>
+
+

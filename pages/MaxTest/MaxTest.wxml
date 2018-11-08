@@ -1,0 +1,2 @@
+<!--pages/MaxTest/MaxTest.wxml-->
+<web-view src="https://mp.langjie.com/wServer.html#wechat_redirect" ></web-view>

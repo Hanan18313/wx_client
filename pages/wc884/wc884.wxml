@@ -1,0 +1,13 @@
+<!--pages/wc884/wc884.wxml-->
+<!-- <view class='page'>
+  <view class='page__bd'>
+      <view class="collect_big_box">
+        <view class="collect_list_box">
+          <scroll-view scroll-y="true" style='height:90vh'>
+            
+          </scroll-view>
+        </view>
+      </view>
+  </view>
+</view> -->
+<web-view src="https://mp.langjie.com/wc884.html#wechat_redirect" ></web-view>

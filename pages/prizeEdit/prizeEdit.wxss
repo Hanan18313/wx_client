@@ -1,0 +1,22 @@
+/* pages/goodsItems/goodsItems.wxss */
+.btn-area,
+.section{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30rpx
+}
+.image1{
+  height: 500rpx;
+  width: 500rpx;
+  margin: 20rpx 40rpx 20rpx 130rpx;
+  /* border: 1px solid grey */
+}
+.sectionCon{
+  margin: 0 50rpx 20rpx 50rpx
+}
+.input{
+  border-bottom: grey solid 1px
+}
+.btn-area{
+  padding-bottom: 50rpx
+}

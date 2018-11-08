@@ -1,0 +1,54 @@
+/* pages/tag/tag.wxss */
+.input_signIn_id{
+  padding-top: 100rpx;
+  border-bottom: grey solid 1px;
+}
+.btn-area{
+  padding-top: 100rpx;
+}
+.prize_info{
+  display: flex;
+  flex-direction: row;
+}
+.prize_info_title3>view,
+.prize_info>view>view{
+  width: 150rpx;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.prize_info_title1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  position: relative;
+  left: -44rpx;
+}
+.prize_info_title2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  font-size: 40rpx;
+}
+.prize_info_title3{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  font-size: 40rpx;
+  position: relative;
+  left: -44rpx;
+}
+.prize_info>text{
+  margin: 10rpx 0 10rpx 0;
+}
+.ProductIco{
+  width: 40vm;
+  height: 30vh;
+}
+.winner_info{
+  padding-top: 100rpx;
+}
+.winner_info{
+  text-align: center;
+  font-size: 38rpx;
+}

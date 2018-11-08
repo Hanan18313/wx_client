@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+
+    "pages/prizeView/prizeView",
+    "pages/prizeManage/prizeManage",
+    "pages/prizeShow/prizeShow",
+    "pages/prizeAdd/prizeAdd",
+    "pages/prizeEdit/prizeEdit",
+    
+    "pages/attendee/attendee",
+    "pages/prePrize/prePrize",
+    "pages/about_langjie/about_langjie",
+
+    
+    "pages/draw/draw",
+    "pages/drawPrize/drawPrize",
+    "pages/tag/tag",
+    "pages/winner/winner",
+    "pages/Center/Center",
+    "pages/drawPrizes/drawPrizes",
+    "pages/meeting-process/meeting-process",
+    "pages/wc884/wc884",
+    "pages/flexural/flexural",
+    "pages/MaxTest/MaxTest",
+    "pages/langjieNet/langjieNet",
+    "pages/tech/tech"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "onReachBottomDistance":"50rpx"
+  }
+}

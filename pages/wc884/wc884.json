@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "威程884",
+  "backgroundColor": "#ffffff",
+  "usingComponents": {
+    "i-grid": "../../style/dist/grid/index",
+    "i-grid-item": "../../style/dist/grid-item/index",
+    "i-grid-icon": "../../style/dist/grid-icon/index",
+    "i-grid-label": "../../style/dist/grid-label/index",
+    "i-row": "../../style/dist/row/index",
+    "i-col": "../../style/dist/col/index"
+  }
+}

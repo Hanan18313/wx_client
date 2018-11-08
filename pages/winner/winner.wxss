@@ -1,0 +1,83 @@
+@import '../../utils/font/iconfont.wxss';
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.top_bar{
+  height: 100rpx;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 20rpx 0 20rpx;
+}
+.name{
+  padding-left : 102rpx;
+}
+.prize_name{
+  padding-left: 168rpx;
+}
+.round{
+  padding-left: 140rpx;
+}
+.collect_list_box {
+  padding-top: 20rpx;
+}
+.recordList_box {
+box-sizing: border-box;
+/* background: #ffffff; */
+}
+.content_box {
+border-top: 1rpx solid #dcdcdc;
+border-bottom: 1rpx solid #ececec;
+position: relative;
+padding: 20rpx 20rpx 20rpx 20rpx;
+}
+.section{
+  margin: 0 20rpx 0 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+.section_member{
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.section_prize{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 50rpx;
+}
+.section_Con{
+  display: flex;
+  flex-direction: row;
+  width: 200rpx;
+}
+.section_title{
+  text-align: center;
+}
+.section1{
+  padding-top:20rpx; 
+}
+.section2{
+  padding-top: 20rpx;
+  position: relative;
+  top: 20rpx;
+
+}
+.Pitems{
+  margin-top: 180rpx;
+  position: relative;
+  bottom: 20rpx
+}
+.Mitems{
+  margin-top: 100rpx;
+}

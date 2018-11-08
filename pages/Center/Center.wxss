@@ -1,0 +1,188 @@
+/* pages/Center/Center.wxss */
+
+@import '../../utils/font/iconfont.wxss';
+page,
+.page,
+.page__bd{
+    height: 100%;
+   
+}
+.page__bd{
+  
+    padding-bottom: 0;
+}
+checkbox-group{
+  width: 662rpx;
+  
+  display: flex;
+  align-items: center;
+}
+.checkbox{
+  padding-left: 20rpx;
+}
+.checkbox_child1{
+  font-size: 37rpx
+}
+.checkbox_child1>text{
+  margin-left: 40rpx 
+}
+.collect_list_box {
+/* padding-top: 90rpx; */
+height: 100%;
+ 
+}
+.collect_big_box{
+  /* background-color: #ececec; */
+}
+.content_box {
+/* border-top: 1rpx solid #dcdcdc; */
+border-bottom: 1rpx solid #ececec;
+position: relative;
+}
+.details{
+  float: right;
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  right: -12rpx;
+  top: 41rpx;
+  display: flex;
+  align-items: center;
+}
+.ProductIco_box {
+width: 130rpx;
+height: 130rpx;
+border-radius: 5px;
+border: 1rpx solid #ececec;
+margin-right: 18rpx;
+float: left;
+}
+.ProductIco {
+width: 100%;
+height: 100%;
+border-radius: 5px;
+}
+.view_ce {
+width: 100%;
+height: 130rpx;
+position: relative;
+padding-top: 20rpx;
+padding-bottom: 30rpx;
+/* background: red; */
+/* border-bottom: 1rpx solid #ececec; */
+}
+.content_box_center {
+width: 100%;
+padding: 0rpx 20rpx 30rpx 20rpx;
+padding-top: 20rpx;
+/* margin-bottom: 30rpx; */
+height: 182rpx;
+z-index: 2;
+/* background: #fff; */
+position: absolute;
+left: 0;
+top: 0;
+box-sizing: border-box;
+border-bottom: 1rpx solid #ececec;
+}
+.view_content {
+float: left;
+width: 556rpx;
+}
+.view_title {
+display: inline-block;
+float: left;
+width: 556rpx;
+font-size: 39rpx;
+color: #393939;
+padding-top: 25rpx;
+display: flex;
+flex-direction: row;
+}
+.view_title_child1{
+  height: 50rpx;
+  width: 200rpx;
+}
+.view_title_child2{
+  font-size: 28rpx;
+  display: flex;
+  align-items: flex-end
+}
+.view_content>text {
+font-size: 32rpx;
+color: #898989;
+margin-right: 88rpx;
+}
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
+
+.top_title{
+  height: 500rpx;
+}
+.but-area{
+  font-size: 20px
+}
+.text{
+  font-size: 24px;
+  color: #333333
+}
+
+
+.signIn {
+  height: 300rpx;
+  width: 100%
+}
+.section{
+  width:  100%
+}
+.about_langjie{
+  width: 100%
+}
+.caption-wrap{
+  font-size:20px;
+  color: #495060; 
+}
+.draw_section,
+.lj_section{
+  display: flex;
+  flex-direction: column;
+}
+.draw_section>text:first-child,
+.lj_section>text:first-child{
+   border-bottom:1px solid #ececec;
+}
+.draw_section>text:last-child,
+.lj_section>text:last-child{
+  position: relative;
+  left: 290px;
+  color: blue 
+}
+.title{
+  text-align: center;
+}
+.title_signIn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+.btn-area{
+  padding-top: 20px;
+}
+.signIn_id{
+  width: 100%;
+  height: 80px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  color: #455ede
+}
+.section_content{
+  margin: 20rpx 40rpx 40rpx 40rpx;
+}
+image{
+  height: 100px;
+  width: 100%
+}

@@ -1,0 +1,21 @@
+{
+  "navigationBarTitleText": "朗杰测控",
+  "enablePullDownRefresh": true,
+    "usingComponents": {
+      "i-sticky": "../../style/dist/sticky/index",
+      "i-sticky-item" : "../../style/dist/sticky-item/index",
+      "i-page" : "../../style/dist/page/index",
+      "i-card" : "../../style/dist/card/index",
+      "i-collapse" : "../../style/dist/collapse/index",
+      "i-collapse-item" : "../../style/dist/collapse-item/index",
+      "i-panel" : "../../style/dist/panel/index",
+      "i-notice-bar" : "../../style/dist/notice-bar/index",
+      "i-radio-group" : "../../style/dist/radio-group/index",
+      "i-radio" : "../../style/dist/radio/index",
+      "i-tab-bar" : "../../style/dist/tab-bar/index",
+      "i-tab-bar-item" : "../../style/dist/tab-bar-item/index",
+      "i-cell-group" : "../../style/dist/cell-group/index",
+      "i-cell" : "../../style/dist/cell/index",
+      "i-switch" : "../../style/dist/switch/index"
+    }
+}

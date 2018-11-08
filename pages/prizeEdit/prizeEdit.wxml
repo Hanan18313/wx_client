@@ -1,0 +1,59 @@
+<!--pages/goodsItems/goodsItems.wxml-->
+<view>
+  <view>
+    <form bindsubmit='formSubmit'>
+      <view class='images'>
+        <image class='image1' src='{{items.imgUrl}}'></image>
+      </view>
+      <view class='sectionCon'>
+        <view class='section' >
+          <!-- <view class='title'>奖品编号：</view> -->
+          <text space='emsp'>编  号：</text>
+          <view class='input'><input disabled='true' type='text' name= "id" value='{{items.id}}' ></input>
+        </view>
+        </view>
+        <view class='section'>
+          <!-- <view class='title'>奖品名称：</view> -->
+          <text space='emsp'>名  称：</text>
+          <view class='input'><input type='text' name= "prize_name" value='{{items.prize_name}}' ></input>
+        </view>
+        </view>
+        <view class='section'>
+          <text space='emsp'>价  格：</text>
+          <view class='input'><input type='text' name = 'price' value='{{items.price}}'></input></view>
+        </view>
+        <view class='section'>
+          <text space='emsp'>简  介：</text>
+          <view class='input'><input type='text' name = 'prize_info' value='{{items.prize_info}}'></input></view>
+        </view>
+        <view class='prize_class'>
+          <view class='section'>
+            <text space='emsp'>品  级：</text>
+            <picker bindchange='bindPickerChangeClass' name = 'classIndex' value='{{classIndex}}' range='{{classArray}}'>
+              <!-- <view class='picker'>{{items.prize_class}}</view> -->
+              <view class='picker'>{{classArray[classIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+        <view class='prize_round'>
+          <view class='section'>
+            <text>所在轮数：</text>
+            <picker bindchange ='bindPickerChangeRound' name = 'roundIndex' value='{{roundIndex}}' range='{{roundArray}}'>
+              <!-- <view class='picker'>{{rounds}}</view> -->
+              <view class='picker'>{{roundArray[roundIndex]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+        <view class='btn-area'>
+          <button form-type='submit'>修改</button>
+          <button bindtap='del' type='warn'>删除</button> 
+        </view>
+    </form> 
+  </view>
+
+</view>
+
+
+

@@ -1,0 +1,2 @@
+<!--pages/langjieNet/langjieNet.wxml-->
+<web-view src="https://mp.langjie.com/aaa.html" style='width:100%'></web-view>

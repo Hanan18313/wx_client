@@ -1,0 +1,51 @@
+
+<view class='page'>
+  <view class='page__bd'>
+      <view class='weui-navbar'>
+      <checkbox-group bindchange = "bindboxChange">
+        <label class='checkbox' wx:for='{{Items}}'>
+          <checkbox class='checkbox_child1' value='{{item.name}}' checked='{{checked}}' bindtap='orderByDraw'><text>{{item.value}}</text></checkbox>
+        </label>
+      </checkbox-group>
+        <button class='iconfont icon-add' bindtap='prizeAdd'></button>
+      </view>
+    <!--最外层大盒子 -->
+      <view class="collect_big_box">
+      <!--列表盒子 -->
+        <view class="collect_list_box">
+          <!-- <scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 840rpx;"> -->
+          <scroll-view scroll-y="true" style='height:85vh'>
+          <!--中部搜索结果列表盒子-->
+            <view class="recordList_box">
+            <!--外层大盒子 -->
+              <view class="content_box" wx:for="{{items}}" wx:key="{{key}}">
+              <!--中部盒子 -->
+              <view class="view_ce">
+                <view style="{{item.txtStyle}}" class="content_box_center" data-index="{{index}}">
+                <!--图片盒子 -->
+                  <view class="ProductIco_box" bindtap='previewImage' id='{{item.id}}'>
+                    <image class="ProductIco" wx:if = "{{item.imgUrl}}" src="{{item.imgUrl}}" data-src="{{item.imgUrl}}"></image>
+                  </view>
+                <!--内容 -->
+                   <view class="view_content">
+                      <text>第{{item.round}}轮</text>
+                      <text>编号：{{item.id}}</text>
+                      <view class='view_title'>
+                        <view class='view_title_child1'><text>{{item.prize_name}}</text></view>
+                        <view class='view_title_child2'><text>价格：{{item.price}}</text></view>
+                      </view>
+                    </view>
+                    <view class='details'  bindtap='details' data-index = "{{index}}" data-prize_id = "{{item.id}}" data-id='id'>
+                      <text class='iconfont icon-angle-double-right'></text>
+                    </view>
+                    </view>
+                </view>
+            </view>
+          </view>
+          </scroll-view>
+        </view>
+      </view>
+  </view>
+</view>
+
+

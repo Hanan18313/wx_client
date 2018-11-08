@@ -1,0 +1,70 @@
+<!--pages/prizeAdd/prizeAdd.wxml-->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-cells">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for="{{files}}" wx:key="*this">
+                                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                                      <image class="weui-uploader__img"  src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <form bindsubmit='bindSubmit' bindreset='bindReset'>
+    <view class='sectionCon'>
+      <!-- <view class='prize_id'>
+        <text space='emsp'>编  号：</text>
+        <view class='input'><input type='number' name = "prize_id" value='{{item.prize_id}}'></input></view>
+      </view> -->
+      <view class='prize_name'>
+        <text space='emsp'>名  称：</text>
+        <view class='input'><input type='text' name = 'prize_name'></input></view>
+      </view>
+      <view class='prize_price'>
+        <text space='emsp'>价  格：</text>
+        <view class='input'><input type='text' name = 'price'></input></view>
+      </view>
+      <view class='prize_number'>
+        <text space='emsp'>数  量：</text>
+        <view class='input'><input type='number' name = 'numbers'></input></view>
+      </view>
+      <view class='prize_info'>
+        <text space='emsp'>简  介：</text>
+        <view class='input'><input type='text' name = 'prize_info'></input></view>
+      </view>
+      <!-- <view class='prize_class'>
+        <view class='section_title'>
+          <text space='emsp'>品  级：</text>
+          <picker bindchange='bindPickerChangeClass' name = 'classIndex' value='{{classIndex}}' range='{{classArray}}'>
+            <view class='picker'>{{classArray[classIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+      <view class='prize_round'>
+        <view class='section_title'>
+          <text>所在轮数：</text>
+          <picker bindchange ='bindPickerChangeRound' name = 'roundIndex' value = '{{roundIndex}}'range='{{roundArray}}'>
+            <view class='picker'>{{roundArray[roundIndex]}}</view>
+          </picker>
+        </view>
+      </view> -->
+
+    </view>
+      <view class='btn-area'>
+        <button form-type='submit'>提交</button>
+        <button form-type='reset'>重置</button>
+      </view>
+    </form>
+</view>

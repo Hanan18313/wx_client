@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "朗杰测控",
+  "usingComponents": {
+    "i-toast": "../../style/dist/toast/index"
+  }
+}

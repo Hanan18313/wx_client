@@ -1,0 +1,20 @@
+/* pages/prizeAdd/prizeAdd.wxss */
+.prize_name,
+.prize_number,
+.prize_price,
+.prize_id,
+.prize_info,
+.section_title{
+  display: flex;
+  flex-direction: row;
+  padding-top: 80rpx;
+}
+.input{
+  border-bottom: grey solid 1px
+}
+.sectionCon{
+  margin: 0 50rpx 0 50rpx
+}
+.btn-area{
+  padding-top:100rpx; 
+}

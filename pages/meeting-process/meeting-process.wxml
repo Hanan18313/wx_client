@@ -1,0 +1,94 @@
+
+<view class='page'>
+  <view class='page__bd'>
+    <!--最外层大盒子 -->
+      <view class="collect_big_box">
+      <!--列表盒子 -->
+        <view class="collect_list_box">
+          <!-- <scroll-view bindscrolltolower="lower" scroll-y="true" style="height: 840rpx;"> -->
+          <scroll-view scroll-y="true" style='height:90vh'>
+            <view style='margin:0 20px 20px 20px;background-color:#5cadff;text-align: center'>
+              <view style='padding:15px 0 15px 0;font-size:20px'>
+                <i-row>
+                  <i-col span="8" i-class="col-class">时间</i-col>
+                  <i-col span="16" i-class="col-class">会议流程</i-col>
+                </i-row>
+              </view>
+            </view>
+            <view style='margin:20px;border-bottom:1px solid #5cadff;text-align: center;'>
+              <view>
+                <i-row>
+                  <i-col span="8" i-class="col-class">7:30-9:00</i-col>
+                  <i-col span="16" i-class="col-class">会议签到</i-col>
+                </i-row>
+              </view>
+            </view>
+            <view style='margin:20px;border-bottom:1px solid #5cadff;text-align: center'>
+              <view>
+                <i-row>
+                  <i-col span="8" i-class="col-class">9:00-9:30</i-col>
+                  <i-col span="16" i-class="col-class">致开幕词</i-col>
+                </i-row>
+              </view>
+            </view>
+            <view style='margin:20px;border-bottom:1px solid #5cadff;text-align: center'>
+              <view>
+                <i-row>
+                  <i-col span="8" i-class="col-class">9:30-10:00</i-col>
+                  <i-col span="16" i-class="col-class">威程884外置控制器</i-col>
+                </i-row>
+              </view>
+            </view>
+                        <view style='margin:20px;border-bottom:1px solid #5cadff;text-align: center'>
+              <view>
+                <i-row>
+                  <i-col span="8" i-class="col-class">10:00-10:30</i-col>
+                  <i-col span="16" i-class="col-class">抗折抗压一体机控制器</i-col>
+                </i-row>
+              </view>
+            </view>
+            <view style='margin:20px;border-bottom:1px solid #5cadff;text-align: center'>
+              <view>
+                <i-row>
+                  <i-col span="8" i-class="col-class">10:30-11:00</i-col>
+                  <i-col span="16" i-class="col-class">潮科技--朗杰测控微服务2.0</i-col>
+                </i-row>
+              </view>
+            </view>
+            <view style='margin:20px;border-bottom:1px solid #5cadff;text-align: center'>
+              <view>
+                <i-row>
+                  <i-col span="8" i-class="col-class">11:00-11:30</i-col>
+                  <i-col span="16" i-class="col-class">2018-朗杰技术荟萃</i-col>
+                </i-row>
+              </view>
+            </view>
+            <view style='margin:20px;border-bottom:1px solid #5cadff;text-align: center'>
+              <view>
+                <i-row>
+                  <i-col span="8" i-class="col-class">11:30-12:00</i-col>
+                  <i-col span="16" i-class="col-class">现场演示</i-col>
+                </i-row>
+              </view>
+            </view>
+            <view style='margin:20px;border-bottom:1px solid #5cadff;text-align: center'>
+              <view>
+                <i-row>
+                  <i-col span="8" i-class="col-class">12:00-14:00</i-col>
+                  <i-col span="16" i-class="col-class">午餐时间</i-col>
+                </i-row>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
+      </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+

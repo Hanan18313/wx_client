@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "与会人员",
+  "onReachBottom":true,
+  "usingComponents":{
+    "i-load-more":"../../style/dist/load-more/index"
+  }
+}

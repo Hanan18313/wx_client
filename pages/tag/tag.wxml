@@ -1,0 +1,32 @@
+<!--pages/tag/tag.wxml-->
+<view class='container'>
+  <view class='prize_image'>
+    <image class="ProductIco" wx:if="{{items.imgUrl}}" src="{{items.imgUrl}}" data-src='{{items.imgUrl}}'></image>
+  </view>
+  <view>
+    <view class='prize_info'>
+      <view class='prize_info_title1'>
+        <text>编号：</text>
+        <view style='width:150rpx'>{{items.id}}</view>
+      </view>
+      <view class='prize_info_title2'>
+        <text>名称：</text>
+        <view>{{items.prize_name}}</view>
+      </view>
+    </view>
+      <view class='prize_info_title3'>
+        <text>品级：</text>
+        <view>{{items.prize_class}}</view>
+      </view>
+  </view>
+  <view class='winner_info'>
+    <text>请输入中奖人编号</text>
+    <form bindsubmit='bindSubmit'>
+      <view class='input_signIn_id'><input type='number' bindinput='bindRepliceInput' name = 'signIn_id' data-id = "{{items.id}}"></input></view>
+      <view class='btn-area'>
+        <button form-type='submit'>提交</button>
+      </view>
+    </form>
+  </view>
+
+</view>
